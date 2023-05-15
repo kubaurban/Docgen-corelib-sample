@@ -8,6 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <Compile Remove="Docgen.RoslynSandbox\**" />
+	  <Compile Remove="docs\**" />
+	  <EmbeddedResource Remove="Docgen.RoslynSandbox\**" />
+	  <EmbeddedResource Remove="docs\**" />
+	  <None Remove="Docgen.RoslynSandbox\**" />
+	  <None Remove="docs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="LeanCode.DomainModels" Version="7.0.1785" />
     <PackageReference Include="LeanCode.CQRS.Execution" Version="7.0.1785" />
     <PackageReference Include="LeanCode.TimeProvider" Version="7.0.1785" />
